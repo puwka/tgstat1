@@ -1,9 +1,9 @@
 import { serve } from '@hono/node-server'
 import { Hono } from 'hono'
 import { cors } from 'hono/cors'
-import { supabase } from './db'
-import { TelegramService } from './telegramService'
-import { validateTelegramWebAppData, parseInitData } from './utils'
+import { supabase } from './db.js'
+import { TelegramService } from './telegramService.js'
+import { validateTelegramWebAppData, parseInitData } from './utils.js'
 import dotenv from 'dotenv'
 
 dotenv.config()
