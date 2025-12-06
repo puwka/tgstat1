@@ -8,12 +8,10 @@
   ],
   "scripts": {
     "install:all": "npm install && npm install -w backend && npm install -w frontend",
-    "dev": "concurrently \"npm run dev -w backend\" \"npm run dev -w frontend\""
+    "dev": "concurrently \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "build": "npm run build -w frontend && cp -r frontend/dist public"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
-  },
-  "dependencies": {
-    "hono": "^4.10.7"
   }
 }
