@@ -1,5 +1,6 @@
 import { TelegramClient, Api } from "telegram";
-import { StringSession } from "telegram/sessions";
+import { sessions } from "telegram";
+const { StringSession } = sessions;
 
 // In production, these should be in environment variables
 // You can get these from my.telegram.org
