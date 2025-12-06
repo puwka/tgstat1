@@ -95,7 +95,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ stats, user }) => {
               />
               <XAxis dataKey="month" hide />
               <Bar dataKey="count" radius={[4, 4, 0, 0]}>
-                {stats.activityByMonth.map((entry, index) => (
+                {stats.activityByMonth.map((_, index) => (
                   <Cell key={`cell-${index}`} fill={index % 2 === 0 ? '#3b82f6' : '#8b5cf6'} />
                 ))}
               </Bar>
